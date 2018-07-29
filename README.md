@@ -28,3 +28,5 @@ Before trying the following procedure, you might want to install `g++`, `pkg-con
 4. Try the following command at the directory (in the case of `sample1.cpp`)  
 `./sample1.out`  
     -> An image will show up.
+
+And same is true of `sample2.cpp`.
