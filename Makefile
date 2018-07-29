@@ -1,7 +1,16 @@
+# ==========================================================================
+# target: dependency source file
+#	command1
+#	command2
+#	...
+#
+# Note:
+# 	$@ : string of "target"
+# 	$< : string of "first dependency source file"
+# ==========================================================================
+
 sample1: sample1.cpp
 	# build sample1.cpp
-	# 	$@ : target file (sample1)
-	# 	$< : first dependency file (sample1.cpp)
 	g++ $< -o $@.out `pkg-config --cflags opencv` `pkg-config --libs opencv`
 	# execute
 	./$@.out
@@ -10,8 +19,6 @@ sample1: sample1.cpp
 
 sample2: sample2.cpp
 	# build sample2.cpp
-	# 	$@ : target file (sample2)
-	# 	$< : first dependency file (sample2.cpp)
 	g++ $< -o $@.out `pkg-config --cflags opencv` `pkg-config --libs opencv`
 	# execute
 	./$@.out
