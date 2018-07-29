@@ -30,3 +30,10 @@ Before trying the following procedure, you might want to install `g++`, `pkg-con
     -> An image will show up.
 
 And same is true of `sample2.cpp`.
+
+
+## Makefile
+
+You can avoid inputting long command line with Makefile.
+
+If you input `make sample1` or `make sample2` in command line at this directory, you can build and execute sample1.cpp or sample2.cpp.
