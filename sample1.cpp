@@ -1,15 +1,15 @@
-#include <stdio.h>
+#include <iostream>
 #include "opencv2/opencv.hpp"
 
-using namespace cv;
-
-int main()
+int main(void)
 {
-    Mat image;
-    image = imread("./lena.jpg");
-    namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", image);
-    waitKey(0);
+    cv::Mat image;
 
-    return 0;
+    // load image
+    image = cv::imread("./lena.jpg");
+
+    // display image
+    cv::namedWindow("Display Image", CV_WINDOW_AUTOSIZE );
+    cv::imshow("Display Image", image);
+    cv::waitKey(0);
 }
