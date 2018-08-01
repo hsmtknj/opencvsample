@@ -14,7 +14,7 @@ sample1: sample1.cpp
 	g++ $< -o $@.out `pkg-config --cflags opencv` `pkg-config --libs opencv`
 	# execute
 	./$@.out
-	# delete exesution file
+	# delete execution file
 	rm $@.out
 
 sample2: sample2.cpp
@@ -22,5 +22,5 @@ sample2: sample2.cpp
 	g++ $< -o $@.out `pkg-config --cflags opencv` `pkg-config --libs opencv`
 	# execute
 	./$@.out
-	# delete exesution file
+	# delete execution file
 	rm $@.out
